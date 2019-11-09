@@ -1,7 +1,6 @@
 body {
     width: 90%;
     margin: 0 auto;
-
     background: url('https://img.europapress.es/fotoweb/fotonoticia_20190520045042_640.jpg') no-repeat;
     background-size: cover;
 }
@@ -14,7 +13,7 @@ main {
     text-align: center;
     opacity: 0.7;
 
-    background: white;
+    background: rgb(245, 230, 199);
 }
 
 header {
@@ -24,11 +23,12 @@ header {
 img {
     width: 120px;
     height: auto;
-    margin: 25px;
+    margin: 20px 50px;
 }
 figcaption {
-    max-width: 100px;
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
 .images {

@@ -18,7 +18,7 @@ let hero = {
 }
 console.log(hero)//check
 
-
+//enemy
 let enemy = {
     name: "Juanjo",
     heroic: false,
