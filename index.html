@@ -8,31 +8,37 @@
 <body>
 
 <!-- 👍 YOUR HTML HERE 👍 -->
+<main>
+  <header>
+    <h1 class="h1" id="title"> HEROGAME <br/> Game of Thrones  </h1>
+    <div id="content"></div>
+  </header>
 
-<h1 id="title">Game of Thrones HEROGAME </h1>
-<div class="images">
-  <!-- create an img with id 'inn' 
-  on click call rest -->
+  <div class="images">
+    <!-- create an img with id 'inn' 
+    on click call rest -->
 
-  <img id="inn"  onclick="rest(hero)" src="http://www.pngmart.com/files/7/Sleigh-Bed-PNG-Photos.png">
+    <img id="inn"  onclick="rest(hero)" src="https://t2.rbxcdn.com/7c70f65a8041a9b55cd9766ffd0cf48a"><br/>
+      <figcaption><br/>Rest en your castle and get ready for the combat</figcaption>
 
+    <!-- create an img with id 'dagger'
+    onclick call pickup with the dagger weapon -->
 
-  <!-- create an img with id 'dagger'
-  onclick call pickup with the dagger weapon -->
+    <img id="dagger" onclick="pickUpItem(hero,dagger)" src="https://i.pinimg.com/originals/3a/62/71/3a6271cc3f7f0d8bf1a002e1ada9df1e.png">
+      <figcaption>Take your weapon</figcaption>
 
-  <img id="dagger" onclick="pickUpItem(hero,dagger)" src="https://i.pinimg.com/originals/3a/62/71/3a6271cc3f7f0d8bf1a002e1ada9df1e.png">
-
-  <img id="sword" onclick="pickUpItem(hero,sword)" src="https://pngimage.net/wp-content/uploads/2018/06/game-of-thrones-sword-png-2.png">
-
-
-  <!-- create an img with id 'bag'
-  onclick equipWeapon -->
-
-  <img id="bag" onclick="equipWeapon(hero)" src="https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/79c36a9afd2a44e099dbf977ca718452_Large.png">
-
-</div>
+    <!-- <img id="sword" onclick="pickUpItem(hero,sword)" src="https://pngimage.net/wp-content/uploads/2018/06/game-of-thrones-sword-png-2.png"> -->
 
 
+    <!-- create an img with id 'bag'
+    onclick equipWeapon -->
+
+    <img id="bag" onclick="equipWeapon(hero)" src="https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/79c36a9afd2a44e099dbf977ca718452_Large.png">
+      <figcaption>Safe in your bag</figcaption>
+
+  </div>
+
+</main>
 
 
 
