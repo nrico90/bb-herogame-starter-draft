@@ -19,13 +19,13 @@ let hero = {
 console.log(hero)//check
 
 
-// let bad = {
-//     name: "Juanjo",
-//     heroic: false,
-//     inventory: [],
-//     health: 10,
-//     weapon: {type:"", damage: 2}
-// }
+let enemy = {
+    name: "Juanjo",
+    heroic: false,
+    inventory: [],
+    health: 10,
+    weapon: {type:"", damage: 2}
+}
 
 //a parameter: person
 //reassigns health to 10
@@ -68,28 +68,29 @@ function equipWeapon (person) {
 
 function displayStats(person) {
     //empty the content before displayStats
-    const content = document.getElementById("content")
-    content.innerHTML = ""
-
+    const content = document.getElementById("hero")
+    content.innerHTML = "" 
+   
     //displays hero name
     const newName = document.createElement('h2')
-    newName.innerHTML = hero.name
+    newName.innerHTML = person.name
     content.appendChild(newName)
 
     //display the health
     const health = document.createElement('p')
-    health.innerHTML = "Your health is " + hero.health
+    health.innerHTML = "Your health is " + person.health
     content.appendChild(health)
 
     //display type of weapon
     const weapontype = document.createElement('p')
-    weapontype.innerHTML = "Your weapon is " + hero.weapon.type
+    weapontype.innerHTML = "Your weapon is " + person.weapon.type
     content.appendChild(weapontype)
     
     //display damage of weapon
     const weapondamage = document.createElement('p')
-    weapondamage.innerHTML = "Your weapon damage is " + hero.weapon.damage
+    weapondamage.innerHTML = "Your weapon damage is " + person.weapon.damage
     content.appendChild(weapondamage)
 
 }
 displayStats(hero)
+// displayStats(enemy)
