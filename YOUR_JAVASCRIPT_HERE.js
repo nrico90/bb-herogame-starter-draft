@@ -1,7 +1,7 @@
 // Write your JS here
 
 //Allow people to change the name of their hero, you can use window.prompt or use an input element. Be careful using a form because using a form might refresh the page.
-let heroname = prompt("What is your hero's name?", "Daenerys");
+let heroname = prompt("What is your hero's name?", "Daenerys Targaeryn");
 
 //declare a variable
 //name property, string
@@ -20,7 +20,7 @@ console.log(hero)//check
 
 //enemy
 let enemy = {
-    name: "Juanjo",
+    name: "Cersei Lannister",
     heroic: false,
     inventory: [],
     health: 10,
@@ -51,6 +51,8 @@ function pickUpItem (person, weapon) {
         person.inventory.push(weapon)
         person.weapon = weapon
         displayStats(hero)
+        const content = document.getElementById("weaponExit")
+        content.style.opacity = "0"
     } else return 0
 }
 
@@ -67,8 +69,15 @@ function equipWeapon (person) {
 
 
 function displayStats(person) {
-    //empty the content before displayStats
-    const content = document.getElementById("hero")
+   //check if the person is an enemy or the hero 
+    let heroic = ""
+    if (person.heroic) {
+        heroic = "hero"
+    } else {
+        heroic = "enemy"
+    }
+//empty the content before displayStats
+    const content = document.getElementById(heroic)
     content.innerHTML = "" 
    
     //displays hero name
@@ -93,4 +102,4 @@ function displayStats(person) {
 
 }
 displayStats(hero)
-// displayStats(enemy)
+displayStats(enemy)

@@ -56,8 +56,13 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#hero {
-    border: 2px dotted rgb(12, 76, 92); 
+#hero,
+#enemy {
+    border: 5px dotted rgb(12, 76, 92); 
     width: 30%;
     margin: 20px auto;
+}
+
+#enemy {
+    border: 5px dotted rgb(153, 45, 12); 
 }
