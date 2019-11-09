@@ -1,7 +1,7 @@
 // Write your JS here
 
 //Allow people to change the name of their hero, you can use window.prompt or use an input element. Be careful using a form because using a form might refresh the page.
-let heroname = prompt("What is your hero's name?", "");
+let heroname = prompt("What is your hero's name?", "Daenerys");
 
 //declare a variable
 //name property, string
@@ -33,7 +33,7 @@ console.log(hero)//check
 //condition when click reset the health
 function rest (person) {
     if (person.health === 10) {
-       alert("Hey warrior, you already rested enoung. Healthy = 10") 
+       alert("Hey warrior, you already rested enoung. Health = 10") 
     } else person.health = 10
     displayStats(hero)
     return person
@@ -49,6 +49,7 @@ let dagger = {type:"dagger", damage: 2}
 function pickUpItem (person, weapon) {
     if (weapon) {
         person.inventory.push(weapon)
+        person.weapon = weapon
         displayStats(hero)
     } else return 0
 }
