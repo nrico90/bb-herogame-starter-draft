@@ -3,22 +3,34 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 
+<!-- 👍 YOUR HTML HERE 👍 -->
 
-  <!-- 👍 YOUR HTML HERE 👍 -->
+<h1 id="title">Game of Thrones HEROGAME </h1>
+<div class="images">
+  <!-- create an img with id 'inn' 
+  on click call rest -->
 
-
-
-
-  
-<img id="inn" src="" onclick="rest(hero)">
-
-<img id="dagger" onclick="pickUpItem(hero)">
+  <img id="inn"  onclick="rest(hero)" src="http://www.pngmart.com/files/7/Sleigh-Bed-PNG-Photos.png">
 
 
+  <!-- create an img with id 'dagger'
+  onclick call pickup with the dagger weapon -->
 
+  <img id="dagger" onclick="pickUpItem(hero,dagger)" src="https://i.pinimg.com/originals/3a/62/71/3a6271cc3f7f0d8bf1a002e1ada9df1e.png">
+
+  <img id="sword" onclick="pickUpItem(hero,sword)" src="https://pngimage.net/wp-content/uploads/2018/06/game-of-thrones-sword-png-2.png">
+
+
+  <!-- create an img with id 'bag'
+  onclick equipWeapon -->
+
+  <img id="bag" onclick="equipWeapon(hero)" src="https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/79c36a9afd2a44e099dbf977ca718452_Large.png">
+
+</div>
 
 
 

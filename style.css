@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+    height: auto;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    border: 2px solid cadetblue;
+    text-align: center;
+}
